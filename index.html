@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            font-size: 50px;
+            color: red;
+            font-style: italic;
+        }
+        #temp{
+            margin-top: 50px;
+            font-size: 50px;
+            width: 500px;
+            height: 100px;
+            border: 2px solid darkgreen;
+            margin-left:250px ;
+        }
+        #temp_diff{
+            border: 2px solid gray;
+            margin-top: 50px;
+            width: 300px;
+            height: 100px;
+            font-size: 50px;
+            color: darkmagenta;
+        }
+        #submit1{
+            width: 300px;
+            height: 100px;
+            margin-top:50px ;
+            color: darkred;
+            font-size: 50px;
+            margin-left: 500px;
+        }
+        #resultcontainer{
+            margin-top: 70px;
+            padding: 30px;
+            font-size: 70px;
+            color: darkblue;
+            margin-left: 400px;
+        }
+    </style>
+</head>
+<body>
+    <form id = "tempcalc" onsubmit="calculatetemp(); return false">
+        <label for="temp">Please enter the tempearture you had like to convert:</label><br/>
+        <input type="number" id = "temp" placeholder="enter the value">
+
+        <select name="temp_diff" id="temp_diff">
+            <option value="cel">celsius</option>
+            <option value="fah">fahrenheit</option>
+        </select><br>
+        <input type="submit" name = "temp" id = "submit1"><br>
+
+        <span id = "resultcontainer"></span>
+
+    </form>
+
+    <script src="./index.js"></script>
+</body>
+</html>
